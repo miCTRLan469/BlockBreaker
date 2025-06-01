@@ -29,9 +29,9 @@ function drawFrameBall() {
         speedBallY = speedBallY * -1; // Reverse the direction 
     }
     centerX += speedBallX; // Move the ball horizontally
-    if(centerX + radius >= canvas.width || centerX - radius <= 0)
+    if(centerX + radius >= canvas.width || centerX - radius <= 0) // if the ball is out of the canvas
     {
-        speedBallX = speedBallX * -1;
+        speedBallX = speedBallX * -1; // Reverse the direction
     }
 
     ctx.beginPath(); // Start the path
