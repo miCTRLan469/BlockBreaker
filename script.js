@@ -22,8 +22,16 @@ let racketX = canvasGame.width / 2 - racketWidth / 2;
 let PressRight = false;
 let PressLeft = false;
 
+ctxPoints.clearRect(0, 0, canvasPoints.width, canvasPoints.height); // Limpia antes de dibujar
+ctxPoints.font = '20px Arial';
+ctxPoints.fillStyle = 'green';
+ctxPoints.fillText(`By: Esteban`, 20, 40); // Dibuja el texto
+
 // Function to move the ball
 function drawGame() {
+
+    
+
     ctxGame.clearRect(0, 0, canvasGame.width, canvasGame.height); // Clear the canvas
 
     ballCenterY += speedBallY; // Move the ball vertically
